@@ -6,15 +6,15 @@ import '../../ds_theme/ds_theme.dart';
 import '../../ds_theme_data/ds_theme_data.dart';
 import '../ds_tokens_widgets/ds_spacing_widget.dart';
 
-enum DSRadioButtonState { selected, unselected }
+enum DSRadiolabelLargeState { selected, unselected }
 
-class DSRadioButton<T> extends StatelessWidget {
+class DSRadiolabelLarge<T> extends StatelessWidget {
   final ValueChanged<T?>? onChanged;
   final Widget? title;
   final T? groupValue;
   final T value;
 
-  const DSRadioButton({
+  const DSRadiolabelLarge({
     Key? key,
     required this.groupValue,
     required this.value,
@@ -52,7 +52,7 @@ class DSRadioButton<T> extends StatelessWidget {
         if (title != null) ...[
           DSSpacing(spacing: dsTheme.spacing.nano),
           DefaultTextStyle(
-            style: dsTheme.typography.subtitle1,
+            style: dsTheme.typography.titleMedium,
             child: title!,
           )
         ]

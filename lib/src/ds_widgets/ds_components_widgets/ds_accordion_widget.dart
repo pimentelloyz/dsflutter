@@ -166,7 +166,7 @@ class _DSAccordionState extends State<DSAccordion>
             children: [
               Text(
                 widget.content,
-                style: dsTheme.typography.body2.apply(
+                style: dsTheme.typography.bodyMedium.apply(
                   color: contentTextColor,
                 ),
               )
@@ -198,7 +198,7 @@ class _DSAccordionState extends State<DSAccordion>
                         children: [
                           Text(
                             widget.title,
-                            style: dsTheme.typography.label2.apply(
+                            style: dsTheme.typography.bodyMedium.apply(
                               color: titleTextColor,
                             ),
                           ),
@@ -221,7 +221,7 @@ class _DSAccordionState extends State<DSAccordion>
                                 DSSpacing(spacing: dsTheme.spacing.xxxs),
                                 Text(
                                   widget.collapsedContent ?? '',
-                                  style: dsTheme.typography.body2.apply(
+                                  style: dsTheme.typography.bodyMedium.apply(
                                     color: contentTextColor,
                                   ),
                                 ),

@@ -22,9 +22,6 @@ export 'src/ds_tokens/ds_typography_tokens.dart';
 // [WIDGETS > COMPONENTS]
 export 'src/ds_widgets/ds_components_widgets/ds_accordion_widget.dart';
 export 'src/ds_widgets/ds_components_widgets/ds_avatar_widget.dart';
-export 'src/ds_widgets/ds_components_widgets/ds_button_icon_widget.dart';
-export 'src/ds_widgets/ds_components_widgets/ds_button_pill_widget.dart';
-export 'src/ds_widgets/ds_components_widgets/ds_button_widget.dart';
 export 'src/ds_widgets/ds_components_widgets/ds_card_widget.dart';
 export 'src/ds_widgets/ds_components_widgets/ds_checkbox_widget.dart';
 export 'src/ds_widgets/ds_components_widgets/ds_icon_shape_widget.dart';
@@ -33,11 +30,8 @@ export 'src/ds_widgets/ds_components_widgets/ds_link_widget.dart';
 export 'src/ds_widgets/ds_components_widgets/ds_list_item_widget.dart';
 export 'src/ds_widgets/ds_components_widgets/ds_loading_widget.dart';
 export 'src/ds_widgets/ds_components_widgets/ds_pagination_widget.dart';
-export 'src/ds_widgets/ds_components_widgets/ds_progress_bar_widget.dart';
-export 'src/ds_widgets/ds_components_widgets/ds_radio_button_widget.dart';
 export 'src/ds_widgets/ds_components_widgets/ds_separator_widget.dart';
 export 'src/ds_widgets/ds_components_widgets/ds_snackbar.dart';
-export 'src/ds_widgets/ds_components_widgets/ds_stepper_widget.dart';
 export 'src/ds_widgets/ds_components_widgets/ds_switch_widget.dart';
 export 'src/ds_widgets/ds_components_widgets/ds_tooltip.dart';
 // [WIDGETS > TOKENS]

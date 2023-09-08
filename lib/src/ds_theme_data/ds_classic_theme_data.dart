@@ -46,7 +46,7 @@ class ClassicThemeData extends DSThemeData {
 
   @override
   DSTypographyTokens get typography => DSTypographyTokens(
-        headline1: TextStyle(
+        displayLarge: TextStyle(
           color: colors.neutral.pure,
           fontSize: fontSize.xxxl.value,
           fontFamily: fontFamily.base.value,
@@ -54,7 +54,7 @@ class ClassicThemeData extends DSThemeData {
           height: lineHeight.sm.value,
           package: packageName,
         ),
-        headline2: TextStyle(
+        displayMedium: TextStyle(
           color: colors.neutral.pure,
           fontSize: fontSize.xxl.value,
           fontFamily: fontFamily.base.value,
@@ -62,7 +62,7 @@ class ClassicThemeData extends DSThemeData {
           height: lineHeight.sm.value,
           package: packageName,
         ),
-        headline3: TextStyle(
+        displaySmall: TextStyle(
           color: colors.neutral.pure,
           fontSize: fontSize.xl.value,
           fontFamily: fontFamily.base.value,
@@ -70,7 +70,7 @@ class ClassicThemeData extends DSThemeData {
           height: lineHeight.sm.value,
           package: packageName,
         ),
-        headline4: TextStyle(
+        headlineMedium: TextStyle(
           color: colors.neutral.pure,
           fontSize: fontSize.lg.value,
           fontFamily: fontFamily.base.value,
@@ -78,7 +78,7 @@ class ClassicThemeData extends DSThemeData {
           height: lineHeight.sm.value,
           package: packageName,
         ),
-        headline5: TextStyle(
+        headlineSmall: TextStyle(
           color: colors.neutral.pure,
           fontSize: fontSize.md.value,
           fontFamily: fontFamily.base.value,
@@ -86,7 +86,7 @@ class ClassicThemeData extends DSThemeData {
           height: lineHeight.sm.value,
           package: packageName,
         ),
-        headline6: TextStyle(
+        titleLarge: TextStyle(
           color: colors.neutral.pure,
           fontSize: fontSize.sm.value,
           fontFamily: fontFamily.base.value,
@@ -94,7 +94,7 @@ class ClassicThemeData extends DSThemeData {
           height: lineHeight.sm.value,
           package: packageName,
         ),
-        subtitle1: TextStyle(
+        titleMedium: TextStyle(
           color: colors.neutral.pure,
           fontSize: fontSize.xs.value,
           fontFamily: fontFamily.base.value,
@@ -102,7 +102,7 @@ class ClassicThemeData extends DSThemeData {
           height: lineHeight.lg.value,
           package: packageName,
         ),
-        subtitle2: TextStyle(
+        titleSmall: TextStyle(
           color: colors.neutral.pure,
           fontSize: fontSize.xxs.value,
           fontFamily: fontFamily.base.value,
@@ -110,7 +110,7 @@ class ClassicThemeData extends DSThemeData {
           height: lineHeight.xl.value,
           package: packageName,
         ),
-        label1: TextStyle(
+        bodyLarge: TextStyle(
           color: colors.neutral.pure,
           fontSize: fontSize.xs.value,
           fontFamily: fontFamily.base.value,
@@ -118,7 +118,7 @@ class ClassicThemeData extends DSThemeData {
           height: lineHeight.lg.value,
           package: packageName,
         ),
-        label2: TextStyle(
+        bodyMedium: TextStyle(
           color: colors.neutral.pure,
           fontSize: fontSize.xxs.value,
           fontFamily: fontFamily.base.value,
@@ -126,23 +126,7 @@ class ClassicThemeData extends DSThemeData {
           height: lineHeight.xl.value,
           package: packageName,
         ),
-        body1: TextStyle(
-          color: colors.neutral.dark,
-          fontSize: fontSize.xs.value,
-          fontFamily: fontFamily.neutral.value,
-          fontWeight: fontWeight.regular.value,
-          height: lineHeight.lg.value,
-          package: packageName,
-        ),
-        body2: TextStyle(
-          color: colors.neutral.dark,
-          fontSize: fontSize.xxs.value,
-          fontFamily: fontFamily.neutral.value,
-          fontWeight: fontWeight.regular.value,
-          height: lineHeight.lg.value,
-          package: packageName,
-        ),
-        button: TextStyle(
+        labelLarge: TextStyle(
           color: colors.neutral.pure,
           fontSize: fontSize.xs.value,
           fontFamily: fontFamily.base.value,
@@ -150,7 +134,7 @@ class ClassicThemeData extends DSThemeData {
           height: lineHeight.lg.value,
           package: packageName,
         ),
-        caption: TextStyle(
+        bodySmall: TextStyle(
           color: colors.neutral.pure,
           fontSize: fontSize.xxxs.value,
           fontFamily: fontFamily.neutral.value,

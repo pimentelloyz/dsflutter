@@ -89,7 +89,7 @@ class DSCheckbox extends StatelessWidget {
         if (title != null) ...[
           DSSpacing(spacing: dsTheme.spacing.nano),
           DefaultTextStyle(
-            style: dsTheme.typography.subtitle1,
+            style: dsTheme.typography.titleMedium,
             child: title!,
           )
         ]

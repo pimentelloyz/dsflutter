@@ -61,7 +61,7 @@ class DSLink extends StatelessWidget {
           children: [
             Text(
               text,
-              style: dsTheme.typography.label1.copyWith(
+              style: dsTheme.typography.bodyLarge.copyWith(
                 color: isDisabled ? disableTextColor : textColor,
               ),
             ),

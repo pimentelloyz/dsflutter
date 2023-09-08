@@ -139,14 +139,14 @@ class DSListItem extends StatelessWidget {
                             children: [
                               if (showLabelLeading)
                                 DefaultTextStyle(
-                                  style: dsTheme.typography.label2,
+                                  style: dsTheme.typography.bodyMedium,
                                   child:
                                       labelLeading!.centerVertically(context),
                                 ),
                               if (showParagraphLeading) ...[
                                 DSSpacing(spacing: dsTheme.spacing.quarck),
                                 DefaultTextStyle(
-                                  style: dsTheme.typography.body2,
+                                  style: dsTheme.typography.bodyMedium,
                                   child: paragraphLeading!
                                       .centerVertically(context),
                                 ),
@@ -160,7 +160,7 @@ class DSListItem extends StatelessWidget {
                                 children: [
                                   if (showlabelTrailing)
                                     DefaultTextStyle(
-                                      style: dsTheme.typography.label2,
+                                      style: dsTheme.typography.bodyMedium,
                                       child: labelTrailing!
                                           .centerVertically(context),
                                     ),
@@ -171,7 +171,7 @@ class DSListItem extends StatelessWidget {
                                       ),
                                     DefaultTextStyle(
                                       textAlign: TextAlign.center,
-                                      style: dsTheme.typography.body2,
+                                      style: dsTheme.typography.bodyMedium,
                                       child: paragraphTrailing!
                                           .centerVertically(context),
                                     ),

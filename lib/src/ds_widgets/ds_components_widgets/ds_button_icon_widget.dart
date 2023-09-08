@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:design_system/design_system.dart';
 
-enum DSButtonIconType { primary, secondary }
+enum DSlabelLargeIconType { primary, secondary }
 
-enum DSButtonIconSize { lg, md, sm }
+enum DSlabelLargeIconSize { lg, md, sm }
 
-class DSButtonIcon extends StatelessWidget {
-  final DSButtonIconType type;
-  final DSButtonIconSize size;
+class DSlabelLargeIcon extends StatelessWidget {
+  final DSlabelLargeIconType type;
+  final DSlabelLargeIconSize size;
   final IconData icon;
   final bool onColor;
   final bool showBadge;
   final VoidCallback? onPressed;
 
-  const DSButtonIcon({
+  const DSlabelLargeIcon({
     Key? key,
     required this.size,
     required this.type,
@@ -23,24 +23,24 @@ class DSButtonIcon extends StatelessWidget {
     this.showBadge = false,
   }) : super(key: key);
 
-  const DSButtonIcon.primary({
+  const DSlabelLargeIcon.primary({
     Key? key,
     required this.icon,
-    this.size = DSButtonIconSize.md,
+    this.size = DSlabelLargeIconSize.md,
     this.onPressed,
     this.onColor = false,
     this.showBadge = false,
-  })  : type = DSButtonIconType.primary,
+  })  : type = DSlabelLargeIconType.primary,
         super(key: key);
 
-  const DSButtonIcon.secondary({
+  const DSlabelLargeIcon.secondary({
     Key? key,
     required this.icon,
-    this.size = DSButtonIconSize.md,
+    this.size = DSlabelLargeIconSize.md,
     this.onPressed,
     this.onColor = false,
     this.showBadge = false,
-  })  : type = DSButtonIconType.secondary,
+  })  : type = DSlabelLargeIconType.secondary,
         super(key: key);
 
   @override
@@ -55,7 +55,7 @@ class DSButtonIcon extends StatelessWidget {
     final DSBorderRadiusToken borderRadiusToken = dsTheme.borderRadius.circular;
 
     switch (type) {
-      case DSButtonIconType.primary:
+      case DSlabelLargeIconType.primary:
         backgroundColorEnabled = onColor
             ? dsTheme.colors.neutral.light
             : dsTheme.colors.brand.secondary.pure;
@@ -72,7 +72,7 @@ class DSButtonIcon extends StatelessWidget {
             ? dsTheme.colors.neutral.light.withOpacity(0.64)
             : dsTheme.colors.neutral.high;
         break;
-      case DSButtonIconType.secondary:
+      case DSlabelLargeIconType.secondary:
         backgroundColorEnabled = onColor
             ? dsTheme.colors.neutral.light.withOpacity(0.16)
             : dsTheme.colors.neutral.low;
@@ -97,26 +97,27 @@ class DSButtonIcon extends StatelessWidget {
     late final double positionBadgeRight;
     late final DSIconSize dsIconSize;
     late final Widget badge;
-    late final Color colorBadge = type == DSButtonIconType.secondary && onColor
-        ? dsTheme.colors.neutral.light
-        : dsTheme.colors.feedback.informative.pure;
+    late final Color colorBadge =
+        type == DSlabelLargeIconType.secondary && onColor
+            ? dsTheme.colors.neutral.light
+            : dsTheme.colors.feedback.informative.pure;
 
     switch (size) {
-      case DSButtonIconSize.lg:
+      case DSlabelLargeIconSize.lg:
         diameter = 64.0;
         diameterBadge = 8.0;
         dsIconSize = DSIconSize.lg;
         positionBadgeRight = 6.0;
         positionBadgeTop = 6.0;
         break;
-      case DSButtonIconSize.md:
+      case DSlabelLargeIconSize.md:
         diameter = 48.0;
         diameterBadge = 8.0;
         dsIconSize = DSIconSize.md;
         positionBadgeRight = 3.0;
         positionBadgeTop = 3.0;
         break;
-      case DSButtonIconSize.sm:
+      case DSlabelLargeIconSize.sm:
         diameter = 32.0;
         diameterBadge = 8.0;
         dsIconSize = DSIconSize.sm;
